@@ -1,0 +1,51 @@
+#wPopup{
+	min-width:200px;
+	max-width:300px;
+	overflow:hidden;
+	background:#dbdbdb;
+	border-radius:5px;
+	box-shadow:0px 0px 10px #666;
+	border:1px solid #f0f0f0;
+	font:12px helvetica;
+	z-index:999999999;
+}
+#wPopup img.close{
+	float:right;
+	margin:6px 8px 0 0;
+}
+#wPopup h2{
+	margin:8px 4px 4px 8px;
+	font:16px helvetica;
+	color:#333;
+}
+#wPopup h2 b{
+	margin-right:6px;
+}
+
+#wPopup .meanings{
+	margin:3px 3px 3px 10px;
+	padding:0;
+	display:inline-block;
+	list-style-type:none;
+	font:13px helvetica,verdana;
+	line-height:19px;
+}
+#wPopup .meanings li{
+	display:inline;
+	padding-right:2px;
+}
+#wPopup .meanings li i{
+	font-size:12px;
+	font-weight:bold;
+	color:#222;
+}
+#wPopup .meanings .flag{
+	vertical-align:bottom;
+}
+
+#wPopup a.more{
+	padding-left:4px;
+	font: 11px helvetica;
+	color: #0940b1;
+}
+
