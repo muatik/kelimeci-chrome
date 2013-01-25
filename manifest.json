@@ -2,13 +2,19 @@
 	"name": "Kelimeci.net Sözlük",
 	"description": "",
 	"version": "0.1",
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"browser_action":{
 		"default_title": "kelimeci.net Sözlük",
 		"default_popup": "kelimeci.html",
 		"default_icon": "kelimeci32.png"
 	},
-	"background_page": "extension.html",
+	"background":{
+		"scripts":[
+			"jquery.js",
+			"createXHR.js",
+			"extension.js"
+		]
+	},
 	"content_scripts":[{
 		"matches": ["http://*/*","https://*/*"],
 		"js":["jquery.js","content.js","jquery.jplayer.js"],
@@ -24,6 +30,14 @@
 		"48":"kelimeci16.png",
 		"64":"kelimeci48.png",
 		"128":"kelimeci128.png"
-	}
-
+	},
+	"web_accessible_resources": [
+		"content.css",
+		"close.png",
+		"close2.png",
+		"en.png",
+		"tr.png",
+		"speakerPassive.png",
+		"speakerActive.png"
+	]
 }
