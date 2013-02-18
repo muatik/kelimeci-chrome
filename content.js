@@ -1,7 +1,9 @@
 function kelimeciInıt(){
 	
 	$(document).bind('dblclick',function(e){
-
+		if(!e.ctrlKey)
+			return;
+		
 		$('#wPopup').remove();
 
 		// Get selected text
