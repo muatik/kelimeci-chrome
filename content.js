@@ -17,7 +17,7 @@ function kelimeciInıt(){
 
 	}).keyup(function(e){
 		if(e.keyCode==27) // esc key
-			$('#Wpopup').remove();
+			$('#wPopup').remove();
 	});
 
 }
